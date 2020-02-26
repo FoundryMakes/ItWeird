@@ -13,7 +13,7 @@ branding:
 landing:
   tagline: A compass for a world without maps. —Joi Ito
   viewAll: View All
-  quickLink: <br><br><a href="/employee-handbook">Get Started</a>
+  quickLink: <br><br><a href="/categories">Dive into the deep end</a>
   modules:
     - tag: team
       label: Find by team
