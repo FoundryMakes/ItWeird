@@ -35,7 +35,7 @@ footer:
 
 # pages/search, partials/search
 search:
-  placeholder: What do you want to know about Foundry?
+  placeholder: Search the knowledge base...
   results:
     title: !!js/function (query) => `Search results for ${query}`
     kicker: !!js/function (query) => `Showing results for '${query}':`
