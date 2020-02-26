@@ -210,7 +210,7 @@
   }
 
   .g-main-content {
-    border-top: 5px solid $gray-60;
+    border-top: 2px solid $gray-50;
   }
 
   .playlist-navigation,
@@ -229,6 +229,7 @@
       font-weight: 300;
       font-size: 1rem;
       line-height: 1.4;
+      color: $slate;
 
       @include tablet{
         font-size: 1.125rem;

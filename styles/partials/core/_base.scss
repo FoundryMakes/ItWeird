@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-sans;
   margin-top: 45px;
   margin-bottom: 20px;
+  color: $primary;
 }
 
 a {
@@ -140,19 +141,20 @@ button:focus {
   transition: background-color 0.3s;
   display: inline-block;
   padding: 7px 10px;
-  border: 1px solid $gray-40;
+  border: 1px solid $primary;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   -webkit-box-shadow: 5px 5px 0px 0px $offwhite;
   -moz-box-shadow: 5px 5px 0px 0px $offwhite;
   box-shadow: 5px 5px 0px 0px $offwhite;
   margin-right: 10px;
-  color: $gray-20;
+  color: $primary;
   margin-top: 10px;
 
   &:hover {
-    background: $gray-20;
+    background: $primary;
     color: $primary-lightest;
+    text-decoration: none;
   }
 }
 
