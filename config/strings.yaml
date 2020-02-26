@@ -3,17 +3,17 @@
 
 # base config in partials/branding, partials/head
 branding:
-  name: Library
-  prettyName: Team Library
-  org: Your Organization
-  icon: /assets/images/icon-logo.svg
-  favicon: /assets/images/library.ico
+  name: Knowledge Base
+  prettyName: Knowledge Base
+  org: Foundry
+  icon: /assets/images/foundry-logo.svg
+  favicon: /assets/images/foundry-favicon.png
 
 # pages/categories, pages/index, partials/search
 landing:
-  tagline: One place for your organization's documents.
+  tagline: A compass for a world without maps. —Joi Ito
   viewAll: View All
-  quickLink: <a href="/get-started">Get Started.</a>
+  quickLink: <br><a href="/employee-handbook">Get Started</a>
   modules:
     - tag: team
       label: Find by team
@@ -25,8 +25,8 @@ landing:
 
 # partials/footer
 footer:
-  helpText: Questions? Contact your organization's administrators.
-  defaultEmail: user@your_organization.com
+  helpText: Questions? Contact the knowledge base admin team.
+  defaultEmail: kb-admin@foundrymakes.com
   buttons:
     edit: Edit This Page
     move: Move This Page
@@ -44,7 +44,7 @@ search:
       person: !!js/function (lastUser) => `Last edited by <span class='author'>${lastUser}`
     none:
       kicker: !!js/function (query) => `There are no results for '${query}'`
-      suggestion: To request a new page, contact your administrators.
+      suggestion: To request a new page, contact the knowledge base admin team.
 
 # categories/default
 folder:

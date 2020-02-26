@@ -2,7 +2,6 @@
 //------------------------------------------------------------------------------
 body {
   font-family: $font-sans;
-  font-weight: 100;
   margin: 0;
   padding: 0;
 }
@@ -123,7 +122,7 @@ button:focus {
 
   &:hover {
     background: $elem-link-accent;
-    color: $white;
+    color: $primary-lightest;
     -webkit-box-shadow: 3px 3px 0px 0px $gray-25;
     -moz-box-shadow: 3px 3px 0px 0px $gray-25;
     box-shadow: 3px 3px 0px 0px $gray-25;
@@ -153,7 +152,7 @@ button:focus {
 
   &:hover {
     background: $gray-20;
-    color: $white;
+    color: $primary-lightest;
   }
 }
 

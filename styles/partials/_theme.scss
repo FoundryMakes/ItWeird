@@ -1,30 +1,30 @@
 // Fonts
 //------------------------------------------------------------------------------
 // Font imports
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:500,600,700|IBM+Plex+Sans:100,200,300,400,500,600,700&display=swap');
 
-$font-branding: 'Alfa Slab One', cursive;
-$font-headline: 'Open Sans', sans-serif;
-$font-sans: 'Open Sans', sans-serif;
+$font-branding: 'IBM Plex Sans Condensed', sans-serif;
+$font-headline: 'IBM Plex Sans Condensed', sans-serif;
+$font-sans: 'IBM Plex Sans', sans-serif;
 
 // Colors
 //------------------------------------------------------------------------------
-// Default Light Theme
-$masthead-background: $gray-10;
-$main-homepage-background: $white;
-$main-homepage-icon-color: $black;
-$main-homepage-icon-border: $black;
+// Foundry Theme
+$masthead-background: $primary;
+$main-homepage-background: $primary-lightest;
+$main-homepage-icon-color: $primary;
+$main-homepage-icon-border: $primary;
 $main-page-text-color: $gray-35;
 $main-page-btn-color: $gray-45;
-$search-container-background: #e6e2e2;
-$search-container-hover: $gray-70;
-$btn-homepage-background: $white;
-$btn-homepage-border: $black;
-$btn-default-background: $white;
+$search-container-background: $primary-lightest;
+$search-container-hover: darken($primary-lightest, 15%);
+$btn-homepage-background: $primary-lightest;
+$btn-homepage-border: $primary;
+$btn-default-background: $primary-lightest;
 $btn-default-background-hover: $accent;
-$btn-default-border: $black;
-$btn-default-text-color: $black;
-$btn-default-text-hover: $black;
+$btn-default-border: $primary;
+$btn-default-text-color: $primary;
+$btn-default-text-hover: $primary;
 $btn-user-initial: $gray-50;
 $elem-link-color: $gray-50;
 $elem-active-link-color: $gray-50;

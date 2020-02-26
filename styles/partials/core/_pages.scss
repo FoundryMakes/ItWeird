@@ -134,11 +134,11 @@
 
       .twitter-typeahead {
         background: $search-container-background;
-        &:hover,
-        &:focus,
-        &:active {
-          background: $search-container-hover;
-        }
+        // &:hover,
+        // &:focus,
+        // &:active {
+        //   background: $search-container-hover;
+        // }
       }
 
       .icon{
@@ -394,7 +394,7 @@
           padding-right: 0;
 
           a {
-            color: $black;
+            color: $primary;
           }
         }
       }

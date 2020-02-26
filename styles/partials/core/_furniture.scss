@@ -27,7 +27,6 @@
 
         .logo {
           height: 23px;
-          filter: invert(100%) brightness(80%);
           margin-left: -5px;
         }
       }
@@ -100,19 +99,19 @@
   letter-spacing: 0.01em;
   line-height: 17px;
 
-  a:hover {
-      text-decoration: underline;
-      outline: 0;
-  }
-
   a:visited {
-      color: $accent-light;
+      color: $gray-50;
   }
 
   a:link {
       text-decoration: none;
-      color: $accent-light;
+      color: $gray-50;
   }
+
+  a:hover {
+    color: $accent;
+    outline: 0;
+}
 }
 
 // Search
@@ -166,11 +165,11 @@
     transition: background-color 0.3s;
     display: inline-block;
     border: 1px solid $gray-40;
-    background: $white;
+    background: $primary-lightest;
     -webkit-box-shadow: 5px 5px 0px 0px $gray-25;;
     -moz-box-shadow: 5px 5px 0px 0px $gray-25;;
     box-shadow: 5px 5px 0px 0px $gray-25;;
-    color: $black;
+    color: $primary;
     float: left;
     width: calc(100% - 20px);
     -webkit-transition: background .55s ease;
@@ -185,7 +184,7 @@
     &:focus,
     &:active {
       outline: none;
-      background:  $accent-lightest;
+      background:  $primary-lightest;
     }
 
 
@@ -216,7 +215,7 @@
     width: 50px;
     top: 1px; // compensate for top border
     right: 1px; // compensate for right border
-    color: $white;
+    color: $primary-lightest;
     opacity: 1;
     font-size: 12pt;
     cursor: pointer;
@@ -269,7 +268,7 @@
       background: darken($elem-active-link-color, 30%);
 
       button.btn-user-initial {
-        background: $black;
+        background: $primary;
         color: $gray-50;
         border-color: $gray-30;
       }
@@ -337,7 +336,7 @@
 .popup {
   margin-top: 40px;
 	padding: 0 20px 5px 20px;
-  background-image: linear-gradient(215deg, $white 0%, $offwhite 100%);
+  background-image: linear-gradient(215deg, $primary-lightest 0%, $offwhite 100%);
 	border: 1px solid #d4d4d4;
 	width: 260px;
   float: right;
@@ -400,7 +399,7 @@
           text-decoration: none;
 
           p {
-            color: $black;
+            color: $primary;
           }
         }
       }

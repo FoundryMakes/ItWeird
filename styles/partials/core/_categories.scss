@@ -15,7 +15,7 @@
   .warning {
     margin-top: 10px;
     background-color: $gray-50;
-    color: $black;
+    color: $primary;
     padding: 15px;
     font-size: 14px;
   }
@@ -25,7 +25,7 @@
     font-size: 36px;
     line-height: 40px;
     font-weight: 200;
-    color: $black;
+    color: $primary;
     margin: 20px 0 5px;
 
     @include tablet {
@@ -129,7 +129,7 @@
       font-family: $font-sans;
       font-weight: 600;
       text-transform: capitalize;
-      color: $black;
+      color: $primary;
       font-size: 14px;
       line-height: 24px;
       margin-bottom: 10px;
@@ -359,7 +359,7 @@
         box-sizing: border-box;
 
         a {
-          color: $black;
+          color: $primary;
         }
       }
     }
@@ -379,10 +379,10 @@
 
     pre{
       counter-reset:line-numbering;
-      background: $accent-lightest;
+      background: $primary-lightest;
       padding:0px 0px 20px 0;
       width:600px;
-      color:$black;
+      color:$primary;
 
       .line {
         display: flex;
@@ -420,13 +420,13 @@
     }
 
     code {
-      background: $accent-lightest;
-      color: $accent-dark;
+      background: $primary-lightest;
+      color: $primary;
       padding: 1px 0px;
       margin: 0 4px;
-      -webkit-box-shadow: 4px 0px 0px $accent-lightest, -4px 0px 0px $accent-lightest;
-      -moz-box-shadow: 4px 0px 0px $accent-lightest, -4px 0px 0px $accent-lightest;
-      box-shadow: 4px 0px 0px $accent-lightest, -4px 0px 0px $accent-lightest;
+      -webkit-box-shadow: 4px 0px 0px $primary-lightest, -4px 0px 0px $primary-lightest;
+      -moz-box-shadow: 4px 0px 0px $primary-lightest, -4px 0px 0px $primary-lightest;
+      box-shadow: 4px 0px 0px $primary-lightest, -4px 0px 0px $primary-lightest;
       -webkit-box-decoration-break: clone;
       -moz-box-decoration-break: clone;
       box-decoration-break: clone;
@@ -462,7 +462,7 @@
 
           span {
             background: $accent-lightest;
-            color: $black;
+            color: $primary;
           }
         }
       }
