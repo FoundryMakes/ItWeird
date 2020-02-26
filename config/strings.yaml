@@ -35,7 +35,7 @@ footer:
 
 # pages/search, partials/search
 search:
-  placeholder: Search...
+  placeholder: What do you want to know about Foundry?
   results:
     title: !!js/function (query) => `Search results for ${query}`
     kicker: !!js/function (query) => `Showing results for '${query}':`
@@ -44,7 +44,7 @@ search:
       person: !!js/function (lastUser) => `Last edited by <span class='author'>${lastUser}`
     none:
       kicker: !!js/function (query) => `There are no results for '${query}'`
-      suggestion: To request a new page, contact the knowledge base admin team.
+      suggestion: To request a new page, contact the knowledge base admin team or create it yourself.
 
 # categories/default
 folder:
