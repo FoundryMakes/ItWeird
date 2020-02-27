@@ -1,7 +1,9 @@
 Library [![Build Status](https://travis-ci.org/nytimes/library.svg?branch=master)](https://travis-ci.org/nytimes/library)
 ========
-
 A collaborative newsroom documentation site, powered by Google Docs.
+
+![foundrymakesitweird-home](https://user-images.githubusercontent.com/1971835/75399754-bd3cce80-58c2-11ea-9260-77b0a774c8f4.png)
+![foundrymakesitweird-page](https://user-images.githubusercontent.com/1971835/75399767-c62da000-58c2-11ea-8733-dd1a7114b2bd.png)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
