@@ -306,26 +306,17 @@
 
     .children-container {
       margin: 40px 0 0 0;
-      padding: 20px 0px 40px 40px;
+      padding: 40px 0px 40px 40px;
       border: 1px solid $slate;
       background: $gray-80;
       position: relative;
 
       h3 {
-        margin: 20px 0 20px;
-        // font-weight: 600;
         font-weight: normal;
         font-size: 14px;
         color: $slate;
         text-transform: uppercase;
-        // margin: 0 0 15px;
-
-        @include tablet{
-          font-size: 12px;
-        }
-        @include desktop{
-          font-size: 12px;
-        }
+        margin: 0 0 15px;
       }
 
       // #category-page & {
@@ -364,7 +355,7 @@
       // }
 
       .foldericon {
-        color: #slate;
+        color: $slate;
         margin-right: 7px;
         font-size: 14px;
         // margin-left: -24px;
@@ -451,30 +442,33 @@
     border-top: none;
 
     h3.search-kicker {
-      margin: 0 0 15px;
-      font-weight: 600;
+      font-weight: normal;
+      font-size: 14px;
+      color: $slate;
+      text-transform: uppercase;
+      margin: 15px 0;
+
+      @include tablet{
+        font-size: 12px;
+      }
+      @include desktop{
+        font-size: 12px;
+      }
     }
 
     .search-result {
+
       a.folder {
         span {
-          // background: #f0f0f0;
-          // color: #483d8b;
-          // padding: 3px 7px;
-          // font-weight: 400;
-          background: $gray-80;
-          color: #666;
-          padding: 3px 6px;
-          font-weight: 400;
-          font-size: 13px;
-          border-radius: 3px;
+          color: $slate;
+          margin: 0 2px;
+          border-bottom: 1px solid $slate;
         }
         &:hover {
           text-decoration: none;
 
           span {
-            background: $accent-lightest;
-            color: $primary;
+            color: $accent;
           }
         }
       }
@@ -482,9 +476,9 @@
         font-weight: 400;
       }
       p {
-        font-size: 15px;
-        margin: 0;
+        font-size: 13px;
         line-height: 24px;
+        margin: 0;
         @include tablet{
 
         }
@@ -493,6 +487,7 @@
         }
       }
       h3 {
+        color: $primary;
         font-weight: 400;
         margin: 20px 0 1px 0;
       }
