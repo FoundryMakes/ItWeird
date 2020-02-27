@@ -270,6 +270,14 @@
   display: flex;
   align-items: center;
   a.btn-doc-link {
+    display: none;
+
+    @include tablet{
+      display: inline-block;
+    }
+    @include desktop{
+      display: inline-block;
+    }
     position: relative;
     &:link, &:visited {
       color: $primary-lightest;
@@ -280,17 +288,6 @@
     &:hover, &:active, &:target {
       background: $slate;
       text-decoration: none;
-    }
-  }
-
-  .kb-tips {
-    display: none;
-
-    @include tablet{
-      display: inline-block;
-    }
-    @include desktop{
-      display: inline-block;
     }
   }
 }
