@@ -8,7 +8,7 @@
   left: 0;
   width: 100vw;
   z-index: 1000000090;
-  color: $elem-link-color;
+  color: $primary-lightest;
 
   .container {
     position: relative;
@@ -47,7 +47,7 @@
         line-height: 26px;
 
         a:link, a:visited {
-          color: $elem-link-color;
+          color: $primary-lightest;
         }
         a:hover {
           color: $accent;
@@ -113,18 +113,18 @@
   line-height: 17px;
 
   a:visited {
-      color: $gray-50;
+      color: $primary-lightest;
   }
 
   a:link {
       text-decoration: none;
-      color: $gray-50;
+      color: $primary-lightest;
   }
 
   a:hover {
     color: $accent;
     outline: 0;
-}
+  }
 }
 
 // Search
@@ -143,7 +143,7 @@
 
   .tt-menu {
     background-color: inherit;
-    border-color: $gray-40;
+    border-color: $primary;
     border-style: solid;
     border-width: 0 1px 1px 1px;
     // compensate for border
@@ -177,11 +177,11 @@
     height: 50px;
     transition: background-color 0.3s;
     display: inline-block;
-    border: 1px solid $gray-40;
-    background: $primary-lightest;
-    -webkit-box-shadow: 5px 5px 0px 0px $gray-25;;
-    -moz-box-shadow: 5px 5px 0px 0px $gray-25;;
-    box-shadow: 5px 5px 0px 0px $gray-25;;
+    border: 1px solid $primary;
+    background: $gray-80;
+    // -webkit-box-shadow: 5px 5px 0px 0px $primary;
+    // -moz-box-shadow: 5px 5px 0px 0px $primary;
+    // box-shadow: 5px 5px 0px 0px $primary;
     color: $primary;
     float: left;
     width: calc(100% - 20px);
@@ -197,7 +197,6 @@
     &:focus,
     &:active {
       outline: none;
-      background:  $primary-lightest;
     }
 
 
@@ -222,8 +221,8 @@
   .icon{
     position: relative;
     z-index: 10;
-    border: none;
-    background: $accent;
+    border: 1px solid $primary;
+    background: $primary;
     height: 50px;
     width: 50px;
     top: 1px; // compensate for top border
@@ -438,7 +437,7 @@
 
     li {
       a {
-        color: $gray-20;
+        color: $primary;
 
         &:hover {
           text-decoration: none;

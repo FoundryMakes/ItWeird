@@ -51,14 +51,14 @@
     p {
       font-family: $font-sans;
       font-size: 13px;
-      color: $nav-text-color;
+      color: $slate;
       margin: 0;
       line-height: 18px;
       font-weight: 400;
 
       .author {
         font-weight: 500;
-        color: #666;
+        color: $primary;
       }
     }
   }
@@ -68,11 +68,11 @@
     font-weight: 400;
 
     a {
-      color: $gray-40;
+      color: $slate;
       text-decoration: underline;
       .fa {
         margin-left: 5px;
-        color: $gray-40;
+        color: $slate;
       }
     }
 
@@ -126,26 +126,26 @@
     }
 
     .section-kicker, .sibling-kicker {
-      font-family: $font-sans;
-      font-weight: 600;
-      text-transform: capitalize;
-      color: $primary;
-      font-size: 14px;
-      line-height: 24px;
-      margin-bottom: 10px;
-    }
-    .section-kicker {
-      margin-top: 20px;
-    }
+          font-weight: normal;
+          font-size: 14px;
+          color: $slate;
+          text-transform: uppercase;
+          margin: 0 0 15px;
 
-    .sibling-kicker {
-      margin-top: 0;
+          @include tablet{
+            font-size: 12px;
+          }
+          @include desktop{
+            font-size: 12px;
+          }
     }
 
     ul.section, ul.sibling {
       list-style-type: none;
-      margin: 0 0 20px 0;
-      padding: 0;
+      margin: 40px 0 40px 0;
+      padding: 20px;
+      border: 1px solid $primary;
+      background: $gray-80;
 
       li {
         display: block;
@@ -153,7 +153,6 @@
         line-height: 20px;
         text-indent: -4px;
         padding: 4px 0px;
-        border-bottom: 0.5px solid $gray-60;
         font-weight: 400;
 
         &:last-child {
@@ -163,7 +162,7 @@
         a,
         strong {
           padding: 3px 5px;
-          color: $gray-20;
+          color: $primary;
         }
 
         a:hover {
@@ -177,13 +176,14 @@
       list-style-type: none;
       margin: 40px 0 40px 0;
       padding: 20px;
-      border: 1px solid $gray-60;
-      -webkit-box-shadow: -8px -8px 0px 0px rgba(236,236,236,1);
-      -moz-box-shadow: -8px -8px 0px 0px rgba(236,236,236,1);
-      box-shadow: -8px -8px 0px 0px rgba(236,236,236,1);
+      border: 1px solid $primary-lightest;
+      background: $primary-lightest;
+      // -webkit-box-shadow: -8px -8px 0px 0px $primary;
+      // -moz-box-shadow: -8px -8px 0px 0px $primary;
+      // box-shadow: -8px -8px 0px 0px $primary;
 
       .foldericon {
-        color: #444;
+        color: $slate;
         margin-left: 8px;
         font-size: 14px;
       }
@@ -199,7 +199,6 @@
 
         &:before {
           content: "";
-          border-bottom: 1px solid $gray-50;
           width: 10px;
           display: inline-block;
           vertical-align: middle;
@@ -210,7 +209,7 @@
   }
 
   .g-main-content {
-    border-top: 2px solid $gray-50;
+    border-top: 0.25px solid $gray-50;
   }
 
   .playlist-navigation,
@@ -219,6 +218,10 @@
     margin: 0px auto 0 auto;
     padding: 10px 0px;
     word-break: break-word; // force break on very long lines without spaces
+    p {
+      margin-top: 1.4rem;
+      margin-bottom: 1.4rem;
+    }
 
     table {
       word-break: keep-all; // don't word break inside tables
@@ -238,12 +241,12 @@
       @include desktop{
         font-size: 1.125rem;
         line-height: 1.6;
+        font-weight: 400;
       }
 
-    p {
-      margin-top: 1.25rem;
-      margin-bottom: 1.25rem;
-    }
+      a:hover {
+        color: $accent;
+      }
     }
 
     // emulate google docs spacing
@@ -302,17 +305,27 @@
     }
 
     .children-container {
-      margin: 40px 0 40px 0;
-      padding: 20px 0px 20px 40px;
-      border: 1px solid $gray-60;
-      -webkit-box-shadow: -4px -4px 0px 0px #efefef;
-      -moz-box-shadow: -4px -4px 0px 0px #efefef;
-      box-shadow: -4px -4px 0px 0px #efefef;
+      margin: 40px 0 0 0;
+      padding: 20px 0px 40px 40px;
+      border: 1px solid $slate;
+      background: $gray-80;
       position: relative;
 
       h3 {
-        margin: 0 0 20px -20px;
-        font-weight: 600;
+        margin: 20px 0 20px;
+        // font-weight: 600;
+        font-weight: normal;
+        font-size: 14px;
+        color: $slate;
+        text-transform: uppercase;
+        // margin: 0 0 15px;
+
+        @include tablet{
+          font-size: 12px;
+        }
+        @include desktop{
+          font-size: 12px;
+        }
       }
 
       // #category-page & {
@@ -351,10 +364,10 @@
       // }
 
       .foldericon {
-        color: #444;
+        color: #slate;
         margin-right: 7px;
         font-size: 14px;
-        margin-left: -24px;
+        // margin-left: -24px;
       }
 
       li {
@@ -366,6 +379,10 @@
 
         a {
           color: $primary;
+
+          &:hover {
+            color: $accent;
+          }
         }
       }
     }
@@ -426,15 +443,6 @@
         line-height: 20px;
       }
     }
-
-    code {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 13px;
-      background: $primary-lightest;
-      color: $primary;
-      padding: 4px 8px;
-      margin: 0 4px;
-    }
   }
 
   #g-search-page {
@@ -443,7 +451,7 @@
     border-top: none;
 
     h3.search-kicker {
-      margin: 20px 0;
+      margin: 0 0 15px;
       font-weight: 600;
     }
 
@@ -512,4 +520,13 @@
   .g-footer-shorter {
     margin: 60px auto;
   }
+}
+
+code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  background: $slate;
+  color: $primary-lightest;
+  padding: 4px 8px;
+  margin: 0 4px;
 }

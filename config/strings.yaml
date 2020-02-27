@@ -11,9 +11,9 @@ branding:
 
 # pages/categories, pages/index, partials/search
 landing:
-  tagline: A compass for a world without maps. —Joi Ito
-  viewAll: View All
-  quickLink: <br><br><a href="/categories">Dive into the deep end</a>
+  tagline: A compass for a world without maps. 
+  viewAll: View all knowledge
+  quickLink: <code>—Joi Ito</code>
   modules:
     - tag: team
       label: Find by team
@@ -52,10 +52,10 @@ folder:
     kicker: !!js/function (title) => `Pages in ${title}`
   # partials/sectionList
   sectionList:
-    heading: "Table of Contents:"
+    heading: "Contents"
   #partials/siblingList
   siblingList:
-    heading: Related Docs
+    heading: Related documents
 
 # playlists/default
 playlist:
