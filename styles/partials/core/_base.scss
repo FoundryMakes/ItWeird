@@ -36,14 +36,18 @@ input {
 // Tables
 table {
   border-collapse: collapse;
+  border-spacing: 0;
   width: 100%;
 }
+
 th, td {
-  padding: 0.25rem 0.5rem;
+  padding: 0.75rem 0.5rem;
   text-align: left;
-  border: 1px solid $gray-50;
+  vertical-align: top;
+  border-bottom: 0.25px solid $slate;
   p {
-    margin: 0;
+    font-size: 0.8rem !important;
+    margin: 0 !important;
   }
 }
 
