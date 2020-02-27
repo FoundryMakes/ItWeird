@@ -12,7 +12,7 @@
 
   .container {
     position: relative;
-    min-height: 49px;
+    min-height: 50px;
 
     .branding {
       padding-top: 3px;
@@ -63,6 +63,19 @@
       float: none;
       position: fixed;
       top: 9px;
+
+      @include tablet{
+        right: 20px;
+      }
+      @include desktop{
+        right: 20px;
+      }
+    }
+    
+    .doc-tools {
+      text-align: right;
+      float: none;
+      position: fixed;
 
       @include tablet{
         right: 20px;
@@ -251,6 +264,38 @@
   display: flex;
   justify-content: space-between;
 }
+
+// Doc Link
+//------------------------------------------------------------------------------
+#doc-link {
+  display: flex;
+  align-items: center;
+  a.btn-doc-link {
+    position: relative;
+    &:link, &:visited {
+      color: $primary-lightest;
+      font-size: 15px;
+      line-height: 24px;
+      padding: 13px 15px 13px 15px;
+    }
+    &:hover, &:active, &:target {
+      background: $slate;
+      text-decoration: none;
+    }
+  }
+
+  .kb-tips {
+    display: none;
+
+    @include tablet{
+      display: inline-block;
+    }
+    @include desktop{
+      display: inline-block;
+    }
+  }
+}
+
 
 
 // User Tools
